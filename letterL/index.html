@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .papa{
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px; 
+            grid-template-areas: 
+                "ch1 body body"
+                "ch2 body body"
+                "ch3 ch3 ch3"; 
+            /* gap:10px; */
+            /* border: 1px solid black; */
+        }
+        .ch1{
+            grid-area: ch1;
+            background-color: lightgray;
+            
+        }
+        .ch2{
+            grid-area: ch2;
+            background-color: lightgray;
+        }
+        .ch3{
+            grid-area: ch3;
+            background-color: lightgray;
+        }
+         .body{
+            grid-area: body;
+             background-color: rgb(247, 245, 245);
+         }
+    </style>
+</head>
+<body>
+    <div class="papa">
+    <div class="ch1"></div>
+    <div class="ch2"></div>
+    <div class="ch3"></div>
+    </div>
+</body>
+</html>
